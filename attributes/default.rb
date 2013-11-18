@@ -18,4 +18,4 @@
 # limitations under the License.
 #
 
-default['powergui']['http_url'] = "http://community-downloads.quest.com/powergui/Release/3.2/PowerGUI.3.2.0.2237.msi"
+default['powergui']['http_url'] = 'http://community-downloads.quest.com/powergui/Release/3.2/PowerGUI.3.2.0.2237.msi'
