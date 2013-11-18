@@ -16,9 +16,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-if platform?("windows")
-  if !File.exists?("C:/Program Files (x86)/PowerGUI/ScriptEditor.exe")
-    windows_package "Quest PowerGUI 3.2" do
+if platform?('windows')
+  unless File.exists?('C:/Program Files (x86)/PowerGUI/ScriptEditor.exe')
+    windows_package 'Quest PowerGUI 3.2' do
       source node['powergui']['http_url']
       installer_type :msi
       action :install
